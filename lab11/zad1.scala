@@ -25,8 +25,6 @@ class Nadzorca extends Actor {
       }
       context.become(zbieraj(Map.empty[String,Int]))
     }
-    //Maciek oglądasz??
-    //Jak nic nie mówisz to jesteś pedałem
   def zbieraj(mapaMain: Map[String,Int]): Receive = {
     
     case Wynik(mapa) =>{
