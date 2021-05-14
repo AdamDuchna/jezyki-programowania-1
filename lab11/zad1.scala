@@ -36,6 +36,7 @@ class Nadzorca extends Actor {
     case Pokaz =>
     {
       println(mapaMain)
+      context.become(receive)
     }
   }
 
